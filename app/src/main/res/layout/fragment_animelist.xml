@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.ui.tab.list.AnimeListFragment"
+    android:padding="@dimen/border_padding">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/anime_grid_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>
